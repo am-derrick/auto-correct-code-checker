@@ -1,4 +1,4 @@
-def generate_pascals_trianlge(n):
+def generate_pascals_triangle(n):
     """this function generates a Pascals triangle
     upto n rows"""
     triangle = []
