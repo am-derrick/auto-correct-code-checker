@@ -12,10 +12,10 @@ def generate_pascals_trianlge(n):
 
 # Generate test cases for 5 and 7 rows
 test_cases = []
-for row in generate_for row in generate_pascals_triangle(5):
+for row in generate_pascals_triangle(5):
     test_cases.append((",".join(map(str, row)), "\n"))
 
-for row in generate_for row in generate_pascals_triangle(7):
+for row in generate_pascals_triangle(7):
     test_cases.append((",".join(map(str, row)), "\n"))
 
 # write the test cases to a file
