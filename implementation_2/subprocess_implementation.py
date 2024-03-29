@@ -37,5 +37,23 @@ def run_tests(learner_code, test_cases):
                 print("Test failed. Expected: ", expected_output, "Got: ", output)
         except subprocess.TimeoutExpired:
             print("Test failed. Execution time exceeded.")
-        excpet Exception as e:
+        except Exception as e:
             print("Test failes. Error occured:", e)
+
+
+# Exapmle usage
+def main():
+    # fetch learner's code
+    learner_code = get_code("am-derrick", "alx-interview-old", "0x00-pascal_triangle/0-pascal_triangle.py", "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")
+    if learner_code is None:
+        return
+
+    # load the test cases
+    with open("test_cases.txt", "r") as file:
+        test_cases = [tuple(line.strip().split(",")) for line in file]
+
+    # run tests
+    run_tests(learner_code, test_cases)
+
+if __name__ == "__main__":
+    main()
