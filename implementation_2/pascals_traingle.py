@@ -15,10 +15,12 @@ test_cases = []
 for row in generate_pascals_triangle(5):
     test_cases.append((",".join(map(str, row)), "\n"))
 
+"""
 for row in generate_pascals_triangle(7):
     test_cases.append((",".join(map(str, row)), "\n"))
+"""
 
 # write the test cases to a file
 with open("test_cases.txt", "w") as file:
     for input_data, expected_output in test_cases:
-        file.write(f"{input_data}\t{expected_output}\n")
+        file.write(f"{input_data}\t{expected_output}")
