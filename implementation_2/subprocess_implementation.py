@@ -44,7 +44,7 @@ def run_tests(learner_code, test_cases):
 # Exapmle usage
 def main():
     # fetch learner's code
-    learner_code = get_code("am-derrick", "alx-interview-old", "0x00-pascal_triangle/0-pascal_triangle.py", "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")
+    learner_code = get_code("am-derrick", "alx-interview-old", "0x00-pascal_triangle/0-pascal_triangle.py", "")
     if learner_code is None:
         return
 
