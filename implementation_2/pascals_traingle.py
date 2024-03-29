@@ -2,7 +2,7 @@ def generate_pascals_trianlge(n):
     """this function generates a Pascals triangle
     upto n rows"""
     triangle = []
-    for in in range(n):
+    for i in range(n):
         row = [1] * (i + 1)
         for j in range(1, i):
             row[j] = triangle[i - 1][j - 1] + triangle[i - 1][j]
