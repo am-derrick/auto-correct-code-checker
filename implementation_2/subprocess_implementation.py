@@ -44,12 +44,12 @@ def run_tests(learner_code, test_cases):
 # Exapmle usage
 def main():
     # fetch learner's code
-    learner_code = get_code("am-derrick", "alx-interview-old", "0x00-pascal_triangle/0-pascal_triangle.py", "")
+    learner_code = get_code("am-derrick", "auto-correct-code-checker", "implementation_2/factorial_recursive.py", "xxx")
     if learner_code is None:
         return
 
     # load the test cases
-    with open("test_cases.txt", "r") as file:
+    with open("test_cases_factorial.txt", "r") as file:
         test_cases = [tuple(line.strip().split(",")) for line in file]
 
     # run tests
